@@ -1,0 +1,22 @@
+{
+  "name": "my_js_projects",
+  "version": "1.0.0",
+  "description": "here i will make some small projects using vanilla javascript as training",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MustafaAhmed22/my_JS_projects.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MustafaAhmed22/my_JS_projects/issues"
+  },
+  "homepage": "https://github.com/MustafaAhmed22/my_JS_projects#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
