@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300&display=swap');
-
+*{
+  box-sizing: border-box;
+}
 body{
 font-family: 'Montserrat', sans-serif;
 font-family: 'Poppins', sans-serif;
@@ -42,7 +44,6 @@ font-family: 'Poppins', sans-serif;
   margin-bottom: 3px;
   text-align: center;
   border-radius: 10px;
-  box-sizing: border-box;
   overflow: auto;
   margin-top: 10px;
 }
@@ -55,7 +56,6 @@ font-family: 'Poppins', sans-serif;
   display: block;
     margin: auto;
   border-radius: 10px;
-  box-sizing: border-box;
   width: 100%;
 color: rgb(255, 255, 255);
 font-size: 20px;
@@ -83,10 +83,12 @@ button:active{
    background-color: #323333;
 
 }
+/*
 .todo_container{
   display: grid;
   grid-template-columns: auto auto;
 }
+*/
 .todo_btns{
   margin-left: 20px;
 }
@@ -99,4 +101,7 @@ button:active{
   border: #494949;
   transition: all 0.5s ease;
 
+}
+.b{
+  margin: 5px;
 }
