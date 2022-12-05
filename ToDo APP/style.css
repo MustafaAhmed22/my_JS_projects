@@ -12,8 +12,8 @@ font-family: 'Poppins', sans-serif;
 }
 .header{
   text-align: center;
-  font-size: 32px;
-
+  font-size: 50px;
+  margin-top: 30%;
 }
 .container{
     position: fixed;
@@ -25,13 +25,13 @@ font-family: 'Poppins', sans-serif;
 .todo{
     background-color: #4d4e4e;
     height: 69px;
-  width: 500px;
+  width: 400px;
   display: block;
   border-bottom: 1px solid #2C3E50;
   color: #fff;
   text-transform: capitalize;
   font-weight: 900;
-  font-size: 11px;
+  font-size: 15px;
   letter-spacing: 1px;
   text-indent: 20px;
   cursor: pointer;
@@ -39,21 +39,64 @@ font-family: 'Poppins', sans-serif;
   position: relative;
     padding-top:15px;
   text-decoration: none;
-  margin: 3px;
+  margin-bottom: 3px;
   text-align: center;
   border-radius: 10px;
   box-sizing: border-box;
   overflow: auto;
+  margin-top: 10px;
+}
+.todo:hover{
+      background-color: #3d3d3d;
 }
 .inp{
-    background-color: #ffffff;
+    background-color: #666666;
     height: 40px;
-  width: 100px;
   display: block;
-  cursor: pointer;
-  margin: auto;
+    margin: auto;
   border-radius: 10px;
   box-sizing: border-box;
-  width: 50%;
-  
+  width: 100%;
+color: rgb(255, 255, 255);
+font-size: 20px;
+border-style: none;
+  transition: all 0.7s ease;
+}
+.btn{
+text-align: center;
+}
+button{
+  border-radius: 10px;
+  background-color: #494949;
+  padding: 12px;
+  margin-top: 5px;
+  color: #fff;
+  border: #494949;
+  transition: all 0.5s ease;
+}
+button:hover{
+      background-color: #3d3d3d;
+   cursor: pointer;
+     transition: all 0.1s ease;
+}
+button:active{
+   background-color: #323333;
+
+}
+.todo_container{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.todo_btns{
+  margin-left: 20px;
+}
+.done ,.del{
+  border-radius: 10px;
+  background-color: #494949;
+  padding: 12px;
+  margin-top: 20px;
+  color: #fff;
+  border: #494949;
+  transition: all 0.5s ease;
+
 }
