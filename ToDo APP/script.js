@@ -26,8 +26,7 @@ todo.map(function(t){
     createBtn1.className='b done'
     let createBtn2 = document.createElement('button')
     createBtn2.textContent = 'DELETE'
-    createBtn1.className = 'b delete'
-        createtodo.append(createBtn1)
+    createBtn1.className = 'b'
         createtodo.append(createBtn2)
 })
 //remove all todos
@@ -53,15 +52,21 @@ let createBtn1 = document.createElement('button')
 createBtn1.textContent = 'DONE'
 createBtn1.className = 'b'
 let createBtn2 = document.createElement('button')
-createBtn2.textContent = 'DELETE'
-createBtn1.className = 'b'
-createtodo.append(createBtn1)
-createtodo.append(createBtn2)
 
+createBtn2.textContent = 'DELETE'
+createBtn2.className = 'b delete'
+//createBtn2.className = 'delete'
+createtodo.append(createBtn2)
 }
-    
 })
 // done
-document.querySelector('.done').addEventListener('click',function(e){
-    document.querySelector()
+
+let done = document.querySelector('.todo_container')
+done.addEventListener('click',function(e){
+    e.target.classList.toggle('checked')
+})
+
+//delete
+document.querySelectorAll('.delete').addEventListener('click', function (e) {
+console.log(e)
 })

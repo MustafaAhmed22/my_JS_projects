@@ -50,6 +50,7 @@ font-family: 'Poppins', sans-serif;
 .todo:hover{
       background-color: #3d3d3d;
 }
+
 .inp{
     background-color: #666666;
     height: 40px;
@@ -76,12 +77,11 @@ button{
 }
 button:hover{
       background-color: #3d3d3d;
-   cursor: pointer;
-     transition: all 0.1s ease;
+      cursor: pointer;
+      transition: all 0.1s ease;
 }
 button:active{
    background-color: #323333;
-
 }
 /*
 .todo_container{
@@ -100,8 +100,17 @@ button:active{
   color: #fff;
   border: #494949;
   transition: all 0.5s ease;
-
 }
 .b{
-  margin: 5px;
+  padding-left: 5px;
+  margin-left: 5px;
+}
+
+ .checked{
+  background-color: rgb(13, 156, 77);
+    text-decoration: line-through;
+}
+.checked:hover{
+  background-color: rgb(13, 156, 77);
+    text-decoration: line-through;
 }
