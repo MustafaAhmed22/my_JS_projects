@@ -1,16 +1,13 @@
 //console.log(randomItem)
-
 const computerChoiece = document.getElementById('computer-choice')
 const userChoiceDisplay = document.getElementById('User-choice')
 const resultDisplay = document.getElementById('result')
 let paperbtn =document.querySelector('#paper')
 let rockbtn = document.querySelector('#rock')
 let scissorsbtn = document.querySelector('#scissors')
-
 paperbtn.addEventListener('click',function(e){
       console.log(e.target.innerText)
-    userChoiceDisplayfun(e)
-           
+    userChoiceDisplayfun(e)       
 })
 rockbtn.addEventListener('click', function (e) {
       console.log(e.target.innerText)
@@ -20,7 +17,6 @@ scissorsbtn.addEventListener('click', function (e) {
       console.log(e.target.innerText)
       userChoiceDisplayfun(e)
 })
-
 function userChoiceDisplayfun(e){
  userChoiceDisplay.textContent=e.target.innerText
  let choice = ['Rock', 'Paper', 'Scissors']
@@ -28,7 +24,6 @@ function userChoiceDisplayfun(e){
  computerChoiece.textContent = randomItem
  resultfun()
 }
-
 function resultfun(){
       if (userChoiceDisplay.textContent === computerChoiece.textContent) {
             resultDisplay.textContent ='duel'
