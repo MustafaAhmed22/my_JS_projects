@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(6, 33, 83);
+}
+.btn{
+     cursor: pointer;
+     border: none;
+     padding: 20px;
+     font-size: 20px;
+     border-radius: 20px;
+}
+.btn:hover{
+    background-color: rgb(173, 173, 173);
+}
+.btn:active{
+    background-color: rgb(92, 92, 92);
+}
+.screen{
+    padding: 3%;
+    grid-column: 1 / span 4;
+    background-color: #fff;
+    border-radius: 20px;
+    font-size: 25px;
+
+}
+.container{
+    margin: 15%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    width: 50%;
+    background-color: rgb(41, 46, 44);
+    border-radius: 20px;
+    padding: 20px;
+}
+.equal{
+    background-color: rgb(230, 91, 91);
+}
+.equal:hover{
+    background-color: rgb(199, 69, 69)
+}
+.equal:active{
+    background-color: rgb(184, 44, 44)
+}
