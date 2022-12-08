@@ -8,7 +8,7 @@ btn.forEach(function(b){
         //console.log(e.target.textContent)
         //result.push(e.target.textContent)
         //let arr=result.join('')
-        if (str.startsWith('*') || str.startsWith('+') || str.startsWith('-' || str.startsWith('/'))){
+        if (str.startsWith('*') || str.startsWith('+') || str.startsWith('-') || str.startsWith('/')){
             str =''
         }
         if (e.target.textContent === '=') {

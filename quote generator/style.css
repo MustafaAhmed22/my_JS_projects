@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+   text-align: center; 
+   margin-left: 30%;  
+    margin-top: 10%;
+
+   width: 40%;
+   border: 2px solid black;
+   padding: 50px;
+   border-radius: 20px;
+   font-size: 20px;
+   border-style: none;
+   color: rgb(255, 255, 255);
+   
+}
+#genNew{
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+#genNew:hover{
+    opacity: .6;
+}
+#genNew:active{
+    opacity: .9;
+}
