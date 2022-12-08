@@ -19,7 +19,7 @@ scissorsbtn.addEventListener('click', function (e) {
 })
 function userChoiceDisplayfun(e){
  userChoiceDisplay.textContent=e.target.innerText
- let choice = ['Rock', 'Paper', 'Scissors']
+ let choice = ['✊', '🖐️', '✌']
  var randomItem = choice[Math.floor(Math.random() * choice.length)];
  computerChoiece.textContent = randomItem
  resultfun()
@@ -27,17 +27,17 @@ function userChoiceDisplayfun(e){
 function resultfun(){
       if (userChoiceDisplay.textContent === computerChoiece.textContent) {
             resultDisplay.textContent ='duel'
-      } else if (userChoiceDisplay.textContent === 'Paper' && computerChoiece.textContent === 'Rock') {
+      } else if (userChoiceDisplay.textContent === '🖐️' && computerChoiece.textContent === '✊') {
             resultDisplay.textContent='you win'
-      } else if (userChoiceDisplay.textContent === 'Paper' && computerChoiece.textContent === 'Scissors') {
+      } else if (userChoiceDisplay.textContent === '🖐️' && computerChoiece.textContent === '✌') {
             resultDisplay.textContent ='computer wins'
-      } else if (userChoiceDisplay.textContent === 'Rock' && computerChoiece.textContent === 'Scissors') {
+      } else if (userChoiceDisplay.textContent === '✊' && computerChoiece.textContent === '✌') {
             resultDisplay.textContent = 'you win'
-      } else if (userChoiceDisplay.textContent === 'Rock' && computerChoiece.textContent === 'Paper') {
+      } else if (userChoiceDisplay.textContent === '✊' && computerChoiece.textContent === '🖐️') {
             resultDisplay.textContent = 'computer wins'
-      } else if (userChoiceDisplay.textContent === 'Scissors' && computerChoiece.textContent === 'Rock') {
+      } else if (userChoiceDisplay.textContent === '✌' && computerChoiece.textContent === '✊') {
             resultDisplay.textContent = 'computer wins'
-      } else if (userChoiceDisplay.textContent === 'Scissors' && computerChoiece.textContent === 'Paper') {
+      } else if (userChoiceDisplay.textContent === '✌' && computerChoiece.textContent === '🖐️') {
             resultDisplay.textContent = 'you win'
       }
 }
