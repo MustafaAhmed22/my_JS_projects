@@ -14,7 +14,10 @@
                         "What lies behind you and what lies in front of you, pales in comparison to what lies inside of you.",
                         "Belief creates the actual fact.",
                         "It is during our darkest moments that we must focus to see the light.",
-                        "Silence is the last thing the world will ever hear from me."
+                        "Silence is the last thing the world will ever hear from me.",
+                        "مَن جاءَ مَسجِدي هذا لم يَأتِهِ إلَّا لِخيرٍ يتعلَّمُهُ أو يعلِّمُهُ، فَهوَ بمنزلةِ المجاهِدِ في سبيلِ اللَّهِ، ومن جاءَ لغيرِ ذلِكَ فَهوَ بمنزلةِ الرَّجُلِ ينظرُ إلى متاعِ غيرِهِ",
+                        "إِذَا مَاتَ الإنْسَانُ انْقَطَعَ عنْه عَمَلُهُ إِلَّا مِن ثَلَاثَةٍ: إِلَّا مِن صَدَقَةٍ جَارِيَةٍ، أَوْ عِلْمٍ يُنْتَفَعُ بِهِ، أَوْ وَلَدٍ صَالِحٍ يَدْعُو له",
+                        "فضلُ العلْمِ أحبُّ إِلَيَّ مِنْ فضلِ العبادَةِ، وخيرُ دينِكُمُ الورَعُ"
                     ]
                     var randomItem = quotes[Math.floor(Math.random() * quotes.length)];
                     //console.log(randomItem)
