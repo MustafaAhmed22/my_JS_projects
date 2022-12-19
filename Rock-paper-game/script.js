@@ -26,7 +26,7 @@ function userChoiceDisplayfun(e){
 }
 function resultfun(){
       if (userChoiceDisplay.textContent === computerChoiece.textContent) {
-            resultDisplay.textContent ='duel'
+            resultDisplay.textContent ='draw'
       } else if (userChoiceDisplay.textContent === '🖐️' && computerChoiece.textContent === '✊') {
             resultDisplay.textContent='you win'
       } else if (userChoiceDisplay.textContent === '🖐️' && computerChoiece.textContent === '✌') {
