@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+body,
+html {
+  height: 100%;
+}
+.kol7aga{
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 10vw;
+    height: 100vh;
+}
+body {
+  background-color: #f7f7f7;
+}
+@media (max-width: 991px) {
+  .el-wrapper {
+    width: 345px;
+  }
+}
+
+@media (max-width: 767px) {
+  .el-wrapper {
+    width: 290px;
+    margin: 30px auto;
+  }
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: 70%;
+  border-radius: 50px;
+}
