@@ -28,3 +28,7 @@
 #genNew:active{
     opacity: .9;
 }
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+}

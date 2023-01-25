@@ -37,6 +37,8 @@ body{
     background-color: rgb(41, 46, 44);
     border-radius: 20px;
     padding: 20px;
+    transform: translateY(50%);
+    margin: auto
 }
 .equal{
     background-color: rgb(230, 91, 91);

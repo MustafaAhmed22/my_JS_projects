@@ -5,6 +5,9 @@
 }
 body{
     background-color: cornflowerblue;
+        background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .8;
 }
 .container{
     background-color: aliceblue;
@@ -16,6 +19,7 @@ body{
     flex-direction: column;
     margin-top: 10vh;
     border-radius: 10px;
+   
 }
 .form{
     text-align: center;

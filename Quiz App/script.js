@@ -277,6 +277,10 @@ document.querySelectorAll('.a').forEach(function(b){
             btn2.innerHTML = questions[counter].answer[1].text
             btn3.innerHTML = questions[counter].answer[2].text
         }else{
+            btn1.disabled =true
+            btn2.disabled = true
+            btn3.disabled = true
+
         const sum = resArray.reduce((a, b) => a + b, 0);
         console.log(sum)
         let res = document.createElement('div')

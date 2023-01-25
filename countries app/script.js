@@ -16,6 +16,8 @@ btn.addEventListener('click',function(e){
     console.log(data[0])
     countryname.textContent = `Name : ${data[0].name.common}`
     flag.setAttribute('src', data[0].flags.svg)
+    document.querySelector('body').style.backgroundImage = `url(${data[0].flags.svg})`
+    
     //console.log(data[0].flags.svg)
     currency.textContent = `Currency : ${Object.keys(data[0].currencies)[0]}`
     //console.log(Object.keys(data[0].currencies)[0])
