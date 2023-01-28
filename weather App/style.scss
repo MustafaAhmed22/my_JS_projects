@@ -1,0 +1,51 @@
+@use 'global'as *;
+
+.container{
+    margin-left: 25vw;
+    width: 50vw;
+    margin-right: 25vw;
+    background-color: rgb(255, 255, 255);
+    margin-top: 20vh;
+    height: 50vh;
+    text-align: center;
+    opacity: .8;
+    border-radius: 20px;
+}
+.container .contains{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding: 20px;
+    
+}
+.cityName,.weather,.temp,.humidity,.pressure,.wind{
+padding-bottom: 30px;
+border-radius: 5px;
+font-size: 20px;
+}
+#inp{
+    margin-top: 15px;
+    border-radius: 8px;
+    width: 20vw;
+    height: 3vh;
+    font-size: 20px;
+}
+.btn{
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: rgb(201, 214, 236);
+}
+.btn:hover{
+   background-color: rgb(128, 161, 223);
+}
+.btn:active{
+   background-color: rgb(88, 136, 224);
+}
+h1{
+    text-align: center;
+    color: white;
+    letter-spacing: 9px;
+    margin-top: 5px;
+    
+}
