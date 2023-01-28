@@ -29,7 +29,7 @@ document.querySelector('.btn').addEventListener('click',function(e){
         pressure.textContent = `pressure : ${data.main.pressure}`
         wind.textContent = `wind speed : ${data.wind.speed}`
             document.body.style.backgroundImage =
-                "url('https://source.unsplash.com/1600x900/?" + inputValue + "')";
+                "url('https://source.unsplash.com/1600x1050/?" + inputValue + "')";
 
     })
 })
