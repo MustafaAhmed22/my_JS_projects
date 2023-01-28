@@ -95,8 +95,16 @@ html {
 }
 .container{
   display: grid;
+  grid-template-columns: auto auto auto;
   justify-content: center;
   background-color: #494949;
   opacity: .7;
   margin: 40px;
+  height: 40vh;
+}
+h1{
+  text-align: center;
+  color: white;
+  letter-spacing: 3px;
+  font-size: 50px;
 }
