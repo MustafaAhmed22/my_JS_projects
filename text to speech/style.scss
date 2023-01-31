@@ -1,0 +1,53 @@
+@use 'global'as *;
+body{
+    background-image: url(wallpaperflare.com_wallpaper\ \(10\).jpg);
+}
+.container{
+    margin-left: 30vw;
+    margin-right: 30vw;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(84, 53, 197);
+    height: 50vh;
+    margin-top: 20vh;
+    border-radius: 15px;
+}
+.container h1{
+    text-align: center;
+    margin: 10px;
+    color: white;
+}
+.container textarea{
+    max-width: 20vw;
+    min-width: 20vw;
+    max-height: 15vh;
+    min-height: 15vh;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.container .btn{
+     margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgb(236, 160, 105);
+    margin-bottom: 10px;
+}
+.container .btn:hover{
+    background-color: rgb(223, 138, 78);
+}
+.container .btn:active{
+    background-color: rgb(196, 108, 46);
+}
+.container #select-voice{
+     margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
