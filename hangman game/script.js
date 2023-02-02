@@ -1,4 +1,10 @@
 let counter =0
+
+let finalUrl = 'https://random-word-api.herokuapp.com/word'
+fetch(finalUrl).then((response) => response.json()).then((data) => {
+console.log(data[0])
+})
+
 let imgArray = [
     'url("img/1.jpg")',
     'url("img/2.jpg")',
