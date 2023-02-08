@@ -35,5 +35,9 @@ fetch(finalUrl).then((response) => response.json()).then((data) => {
      } */
 })
 }
-
-chooseNumber(6)
+let inp = document.querySelector('#inp')
+document.querySelector('.btn').addEventListener('click', function (e) {
+ let inputValue = inp.value
+ chooseNumber(inputValue)
+})
+      chooseNumber(1)
