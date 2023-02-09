@@ -7,7 +7,7 @@ fetch(finalUrl).then((response) => response.json()).then((data) => {
     let displayMenu = function () {
         let display = data.results.map(function (item) {
             return `
-            <div class="card">
+            <div div div div class = "card animate__animated animate__fadeIn animate__slow" >
             <h2 class="card-title">${item.original_name}</h2>
             <img src = "https://image.tmdb.org/t/p/w220_and_h330_face/${item.poster_path}"alt = "" >
             <p class="card-desc">${item.overview}</p>

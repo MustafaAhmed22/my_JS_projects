@@ -2,24 +2,22 @@
 --main-color:#E50914;
 }
 *{
-    padding: 0;
-    margin: 0;
-    
+  padding: 0;
+  margin: 0;
 }
 body{
-    background-color: #222;
-      display: flex;
+  background-color: #222;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
 .cards {    
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin-left: 10%;
-  
+  margin-right: 10%;
 }
 
 .card {
@@ -28,7 +26,6 @@ body{
   width: 250px;
   height: 350px;
   box-shadow: 0 40px 60px -6px black;
-  
 }
 
 .card-title {
@@ -61,16 +58,13 @@ body{
   background-color: white;
   overflow-y: scroll;
   transition: 0.8s ease;
-      width: 210px;
-        border-radius: 5px;
-
-
+  width: 210px;
+  border-radius: 5px;
 }
 
 .card:hover .card-desc {
   opacity: 1;
   height: 100%;
-  
 }
 
 h1 {
@@ -82,4 +76,24 @@ h1 {
 .btn{
   background-color: #E50914;
   color: #ffffff;
+  padding:10px;
+  width: 70px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.btn:hover{
+  background-color: #cf111a;
+  cursor: pointer;
+}
+.btn:active{
+  background-color: #8b0e15;
+  cursor: pointer;
+}
+
+#inp{
+width: 15%;
+text-align: center;
+padding: 5px;
+font-size: 20px;
+border-radius: 10px;
 }
