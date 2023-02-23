@@ -189,13 +189,10 @@ for(let j=0;j<questions.length;j++){
         container.appendChild(btn3)
     document.querySelector('.a').addEventListener('click',function(e){
           console.log(e.target.textContent)
-        e.preventDefault()
-              
-                
+        e.preventDefault()  
     })
 }
 */
-
     /*
     let display = questions.map(function (item) {
         return `
@@ -206,11 +203,9 @@ for(let j=0;j<questions.length;j++){
         <button>${item.answer[2].text} </button>
         `
     })
-        
         display = display.join('')
         this.document.querySelector('.container').innerHTML = display
 */
-
 /*
     let currentIndex = 0;
     document.querySelector(".container").innerHTML = questions[currentIndex].question;
@@ -264,7 +259,6 @@ document.querySelectorAll('.a').forEach(function(b){
         //let ind = questions[counter].answer[indexOf(e.target.textContent)].text
         //console.log(ind)
         //resArray.push(questions[counter].answer[ind].iscorrect)
-            
                 if(trueAnswers2[counter]===e.target.textContent){
                     resArray.push(1)
                 }else{
@@ -280,7 +274,6 @@ document.querySelectorAll('.a').forEach(function(b){
             btn1.disabled =true
             btn2.disabled = true
             btn3.disabled = true
-
         const sum = resArray.reduce((a, b) => a + b, 0);
         console.log(sum)
         let res = document.createElement('div')
@@ -298,8 +291,6 @@ document.querySelectorAll('.a').forEach(function(b){
         resbtn.addEventListener('click',function(e){
             window.location.reload();
         })
-
         }
     })
 })  
-
