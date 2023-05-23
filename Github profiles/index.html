@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.tailwindcss.com"></script>
+    <title>Github Profiles</title>
+</head>
+<body class="bg-fuchsia-900	flex flex-col items-center justify-center">
+    
+<h1 class="text-center text-white	text-5xl tracking-widest mt-4	mb-4">Github Profiles</h1>
+
+<form class="w-full max-w-screen-md form">
+  <input type="text"
+      name=""
+      id="search"
+      placeholder="search github profile"
+      class="w-full
+          text-center block
+         border-none rounded-xl p-4
+          mb-8 bg-fuchsia-950	
+         text-white focus:outline-none
+         placeholder:text-text-gray-400">
+</form>
+
+  <div class="container w-full max-w-screen-md">
+    <div class="card text-white flex p-12 bg-fuchsia-950	rounded-xl my-0 mx-6 max-w-3xl ">
+      <div>
+        <img src="https://randomuser.me/api/portraits/men/30.jpg" alt=""
+         class="avatar rounded-full border-8 border-rose-600 w-40 h-40">
+      </div>
+      <div class="userinfo ml-6">
+        <h2 class="text-4xl mb-4">name</h2>
+        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, error?</p>
+        <ul class="flex justify-around pt-5">
+          <li>100 <strong>Follwers</strong></li>
+          <li>150 <strong>Follwing</strong></li>
+          <li>23 <strong>Repos</strong></li>
+        </ul>
+        <div class="repos pt-8">
+          <a href="#" class="repo bg-fuchsia-900 p-2 inline-block m-2">repo1</a>
+          <a href="#" class="repo bg-fuchsia-900 p-2 inline-block m-2" >repo2</a>
+          <a href="#" class="repo bg-fuchsia-900 p-2 inline-block m-2">repo3</a>
+          <a href="#" class="repo bg-fuchsia-900 p-2 inline-block m-2">repo4</a>
+          <a href="#" class="repo bg-fuchsia-900 p-2 inline-block m-2">repo5</a>
+        </div>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+ integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+  crossorigin="anonymous" 
+  referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+</html>
