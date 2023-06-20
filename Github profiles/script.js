@@ -60,8 +60,6 @@ function addrepostocard(repourl){
     document.querySelector('.repos').innerHTML =rep
 }
 
-
-
 form.addEventListener('submit',function(e){
     e.preventDefault()
     let user = search.value
