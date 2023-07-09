@@ -13,8 +13,8 @@ let createBoard = function(){
     });
 }
 let go ='cross'
-let x=[]
-let o=[]
+let X=[]
+let O=[]
 let pingo=[]
 let winArr =[
     ['0','1','2'],
@@ -31,29 +31,51 @@ function addGo(e){
     //console.log(e.target.id)
     let displayShape =document.createElement('div')
     displayShape.classList.add(go)
-   
     if(go ==='cross'){
-         
-        x.push(e.target.id)
-       // console.log(x)
-        if(x.length>=3){
-            for(let j=0;j<x.length;j++){
-                for(let i=j+1;i<x.length;i++){
-                    for(let k=i+1;k<x.length;k++){
-                   let  arr =[x[j],x[i],x[k]].sort((a,b)=>a-b)
+        X.push(e.target.id) 
+         if(X.length>=3){
+            for(let j=0;j<X.length;j++){
+                for(let i=j+1;i<X.length;i++){
+                    for(let k=i+1;k<X.length;k++){
+                   let  arr =[X[j],X[i],X[k]].sort((a,b)=>a-b)
                      pingo.push(arr)
-                      console.log(pingo)
-                        if (winArr.includes(arr)) {
-                            console.log('x wins')
+                      //console.log(pingo)
+                        if (winArr.some(win => win.every(cell => arr.includes(String(cell))))) {
+                            console.log('X wins')
+                           
+                            setTimeout(() => {
+                                 alert('X Wins')
+                               location.reload()
+                            }, 500);
+                        }
+                    }
+                }
+            }
+        } 
+        go ='circle'
+    }else{
+        O.push(e.target.id)
+        console.log(O)
+        if (O.length >= 3) {
+            for (let j = 0; j < O.length; j++) {
+                for (let i = j + 1; i < O.length; i++) {
+                    for (let k = i + 1; k < O.length; k++) {
+                        let arr = [O[j], O[i], O[k]].sort((a, b) => a - b)
+                        pingo.push(arr)
+                        //console.log(pingo)
+                        if (winArr.some(win => win.every(cell => arr.includes(String(cell))))) {
+                            console.log('O wins')
+                            
+                            setTimeout(() => {
+                            alert('O Wins')
+                            location.reload()
+                            }, 500);
+
                         }
                     }
                 }
             }
         }
-        go ='circle'
-    }else{
-        o.push(e.target.id)
-     //   console.log(o)
         go ='cross'
     }
     e.target.append(displayShape)
