@@ -80,4 +80,10 @@ function addGo(e){
     }
     e.target.append(displayShape)
     e.target.removeEventListener('click',addGo)
+    if(X.length+O.length===9){
+        setTimeout(() => {
+            alert('draw')
+            location.reload()
+        }, 500);
+    }
 }
