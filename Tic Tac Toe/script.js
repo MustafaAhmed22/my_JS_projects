@@ -15,7 +15,6 @@ let createBoard = function(){
 let go ='cross'
 let x=[]
 let o=[]
-let arr =[]
 let pingo=[]
 let winArr =[
     ['0','1','2'],
@@ -41,11 +40,10 @@ function addGo(e){
             for(let j=0;j<x.length;j++){
                 for(let i=j+1;i<x.length;i++){
                     for(let k=i+1;k<x.length;k++){
-                     arr =[x[j],x[i],x[k]].sort((a,b)=>a-b)
+                   let  arr =[x[j],x[i],x[k]].sort((a,b)=>a-b)
                      pingo.push(arr)
-                       // console.log(arr)
-                       console.log(arr)
-                        if (winArr.includes(pingo)) {
+                      console.log(pingo)
+                        if (winArr.includes(arr)) {
                             console.log('x wins')
                         }
                     }
