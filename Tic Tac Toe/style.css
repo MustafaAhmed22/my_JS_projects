@@ -32,6 +32,8 @@ flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
+
 }
 .circle{
     border-radius: 50%;
