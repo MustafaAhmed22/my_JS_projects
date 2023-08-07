@@ -1,6 +1,5 @@
 let drawArr =['','','','','','','','','']
 let board = document.querySelector('.board')
-
 let createBoard = function(){
     drawArr.forEach((cell,index) => {
         console.log(index)
@@ -9,7 +8,6 @@ let createBoard = function(){
             cellElement.id =index
             cellElement.addEventListener('click', addGo)
             board.append(cellElement)
-
     });
 }
 let go ='cross'
@@ -42,9 +40,9 @@ function addGo(e){
                       //console.log(pingo)
                         if (winArr.some(win => win.every(cell => arr.includes(String(cell))))) {
                             console.log('X wins')
-                           
+                            
                             setTimeout(() => {
-                                 alert('X Wins')
+                                alert('X Wins')
                                location.reload()
                             }, 500);
                         }
@@ -65,12 +63,11 @@ function addGo(e){
                         //console.log(pingo)
                         if (winArr.some(win => win.every(cell => arr.includes(String(cell))))) {
                             console.log('O wins')
-                            
+                          
                             setTimeout(() => {
-                            alert('O Wins')
+                              alert('O Wins')
                             location.reload()
                             }, 500);
-
                         }
                     }
                 }

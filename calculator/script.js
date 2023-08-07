@@ -11,13 +11,20 @@ btn.forEach(function(b){
         if (str.startsWith('*') || str.startsWith('+') || str.startsWith('-') || str.startsWith('/')){
             str =''
         }
+        
         if (e.target.textContent === '=') {
             screen.textContent = eval(str)
             str = ''
         }else{
+            if (e.target.textContent === 'DEL') {
+                screen.textContent = ''
+                str = ''
+            }else{
             str += e.target.textContent
             console.log(str)
             screen.textContent = str
+            }
+            
         }
     })
 })
