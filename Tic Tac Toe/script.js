@@ -87,6 +87,6 @@ function addGo(e){
         setTimeout(() => {
            // alert('draw')
             location.reload()
-        }, 500);
+        }, 1000);
     }
 }
