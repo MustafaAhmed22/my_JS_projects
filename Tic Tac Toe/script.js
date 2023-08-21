@@ -30,6 +30,7 @@ function addGo(e){
     let displayShape =document.createElement('div')
     displayShape.classList.add(go)
     if(go ==='cross'){
+        document.querySelector('.info').textContent = 'O TURN'
         X.push(e.target.id) 
          if(X.length>=3){
             for(let j=0;j<X.length;j++){
@@ -40,11 +41,12 @@ function addGo(e){
                       //console.log(pingo)
                         if (winArr.some(win => win.every(cell => arr.includes(String(cell))))) {
                             console.log('X wins')
-                            
-                            setTimeout(() => {
-                                alert('X Wins')
+                                document.querySelector('.info').textContent = 'X WINS'
+                                document.querySelector('body').classList.add('background-win')
+                                setTimeout(() => {
+                                //alert('X Wins')
                                location.reload()
-                            }, 500);
+                            }, 1000);
                         }
                     }
                 }
@@ -53,6 +55,7 @@ function addGo(e){
         go ='circle'
     }else{
         O.push(e.target.id)
+        document.querySelector('.info').textContent = 'X TURN'
         console.log(O)
         if (O.length >= 3) {
             for (let j = 0; j < O.length; j++) {
@@ -63,11 +66,12 @@ function addGo(e){
                         //console.log(pingo)
                         if (winArr.some(win => win.every(cell => arr.includes(String(cell))))) {
                             console.log('O wins')
-                          
+                            document.querySelector('.info').textContent = 'O WINS'
+                            document.querySelector('body').classList.add('background-win')
                             setTimeout(() => {
-                              alert('O Wins')
+                              //alert('O Wins')
                             location.reload()
-                            }, 500);
+                            }, 1000);
                         }
                     }
                 }
@@ -78,8 +82,10 @@ function addGo(e){
     e.target.append(displayShape)
     e.target.removeEventListener('click',addGo)
     if(X.length+O.length===9){
+         document.querySelector('.info').textContent = 'DRAW'
+        document.querySelector('body').classList.add('background-draw')
         setTimeout(() => {
-            alert('draw')
+           // alert('draw')
             location.reload()
         }, 500);
     }

@@ -41,13 +41,18 @@ flex-wrap: wrap;
     height: 50px;
     border: 10px rgb(0, 0, 0) solid;
 }
+.background-win{
+  background-color: rgb(11, 83, 11) !important;
+}
+.background-draw{
+  background-color: rgb(97, 5, 5);
+}
 .cross {
    width: 50px;
    height: 50px;
    position: relative;
    transform: rotate(45deg);
 }
-
 .cross:before, .cross:after {
   content: "";
   position: absolute;
@@ -66,4 +71,9 @@ flex-wrap: wrap;
   height: 30%;
   margin-top: -15%;
   width: 100%;
+}
+.info{
+  color: #fff;
+  margin-top: 20px;
+  font-size: 50px;
 }
