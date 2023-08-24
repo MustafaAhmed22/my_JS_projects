@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+font-family: 'Indie Flower', cursive;
+font-size: 30px;
+font-weight: 600;
+background-image: url(z.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+
+color: aliceblue;
+
+}
+.add{
+    border-radius: 10px;
+    border: none;
+    color: #000;
+   margin: 10px;
+   padding: 10px;
+   background-color: rgb(106, 215, 11);
+
+}
+.add:hover{
+   background-color: rgb(118, 245, 8);
+   color: #FFF;
+   cursor: pointer;
+}
+.add:active{
+    color: rgb(53, 106, 152);
+}
+.notes{
+    margin:30px 10px;
+    width: 300px;
+    height: 400px;
+    background-color: #FFF;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, .5);
+}
+.notes .tools{
+background-color: darkgreen;
+   padding: 0.5rem;
+   height: 40px;
+   display: flex;
+   justify-content: flex-end;
+}
+.notes .tools button{
+    background: transparent;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: .5rem;
+}
+.container{
+    display: flex;
+flex-direction: row-reverse;
+
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+ textarea{
+    width: 300px;
+    height: 360px;
+    border: none;
+    font-size: 30px;
+    resize: none;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
