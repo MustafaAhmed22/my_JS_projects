@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colorful Game</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+
+  <style>
+    body {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #f0f0f0;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    #goal {
+      width: 100px;
+      height: 100px;
+      border: 2px solid black;
+      margin-bottom: 20px;
+    }
+
+    #steps {
+      display: flex;
+      background-color: #c5c5c5;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .player-container {
+      margin: 0 10px;
+    }
+
+    .square {
+      width: 60px;
+      height: 60px;
+      position: relative;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .player {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    #blue-player {
+      background-color: blue;
+    }
+
+    #red-player {
+      background-color: red;
+    }
+
+    #green-player {
+      background-color: green;
+    }
+
+    #yellow-player {
+      background-color: yellow;
+    }
+
+    #orange-player {
+      background-color: orange;
+    }
+
+    #black-player {
+      background-color: black;
+    }
+
+    /* Add a hover effect for squares */
+    .square:hover {
+      background-color: #e0e0e0;
+    }
+
+    #roll {
+      width: fit-content;
+    }
+
+    #roll button {
+      padding: 15px 15px;
+      color: #fff;
+      background-color: #f4d35e;
+      border: none;
+      font-size: 20px;
+      border-radius: 20px;
+      box-shadow: 1px 3px #50514f;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    button:hover,
+    button:active {
+      outline: none;
+      background: #50514f;
+      cursor: pointer;
+    }
+
+    .container {
+      position: relative;
+      display: inline-block;
+      top: 100px;
+    }
+
+    .dice {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      transform-style: preserve-3d;
+      transition: transform 1s;
+    }
+
+    .dice-one {
+      position: absolute;
+      left: 0;
+    }
+
+    .side {
+      position: absolute;
+      background-color: #fff;
+      border-radius: 5px;
+      width: 100px;
+      height: 100px;
+      border: 1px solid #e5e5e5;
+      text-align: center;
+      line-height: 2em;
+    }
+
+    .side:nth-child(1) {
+      transform: translateZ(3.1em);
+    }
+
+    .side:nth-child(6) {
+      transform: rotateY(90deg) translateZ(3.1em);
+    }
+
+    .side:nth-child(3) {
+      transform: rotateY(-90deg) translateZ(3.1em);
+    }
+
+    .side:nth-child(4) {
+      transform: rotateX(90deg) translateZ(3.1em);
+    }
+
+    .side:nth-child(5) {
+      transform: rotateX(-90deg) translateZ(3.1em);
+    }
+
+    .side:nth-child(2) {
+      transform: rotateY(-180deg) translateZ(3.1em);
+    }
+
+    .show-1 {
+      transform: rotateX(720deg) rotateZ(-720deg);
+    }
+
+    .show-6 {
+      transform: rotateX(-900deg) rotateZ(1080deg);
+    }
+
+    .show-3 {
+      transform: rotateY(-450deg) rotateZ(-1440deg);
+    }
+
+    .show-4 {
+      transform: rotateY(810deg) rotateZ(720deg);
+    }
+
+    .show-5 {
+      transform: rotateX(-810deg) rotateZ(-1080deg);
+    }
+
+    .show-2 {
+      transform: rotateX(450deg) rotateZ(-720deg);
+    }
+
+    .one {
+      background-color: red;
+    }
+
+    .two {
+      background-color: green;
+    }
+
+    .three {
+      background-color: blue;
+    }
+
+    .four {
+      background-color: yellow;
+    }
+
+    .five {
+      background-color: orange;
+    }
+
+    .six {
+      background-color: black;
+    }
+    .hide-player {
+      display: none;
+    }
+    .show-player {
+      display: block;
+    }
+    table {
+      background-color: #727272;
+      color: #000000;
+    }
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .score-container {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+  </style>
+
+  <body>
+    <div id="steps">
+      <div id="blue" class="player-container four">
+        <div class="square" id="blue-1">
+          <div id="blue-player" class="player show-player"></div>
+        </div>
+        <div class="square" id="blue-2">
+          <div id="blue-player" class="player hide-player"></div>
+        </div>
+        <div class="square" id="blue-3">
+          <div id="blue-player" class="player hide-player"></div>
+        </div>
+        <div class="square" id="blue-4">
+          <div id="blue-player" class="player hide-player"></div>
+        </div>
+        <div class="square" id="blue-5">
+          <div id="blue-player" class="player hide-player"></div>
+        </div>
+        <div class="square" id="blue-6">
+          <div id="blue-player" class="player hide-player"></div>
+        </div>
+      </div>
+
+      <div id="red" class="player-container one">
+        <div class="square" id="red-1">
+          <div id="red-player" class="player show-player"></div>
+        </div>
+        <div class="square" id="red-2">
+          <div id="red-player" class="player hide-player"></div>
+        </div>
+        <div class="square" id="red-3">
+          <div id="red-player" class="player hide-player"></div>
+        </div>
+        <div class="square" id="red-4">
+          <div id="red-player" class="player hide-player"></div>
+        </div>
+        <div class="square" id="red-5">
+          <div id="red-player" class="player hide-player"></div>
+        </div>
+        <div class="square" id="red-6">
+          <div id="red-player" class="player hide-player"></div>
+        </div>
+      </div>
+
+      <div id="green" class="player-container six">
+        <div class="square" id="green-1">
+          <div id="green-player" class="player show-player"></div>
+        </div>
+        <div class="square" id="green-2">
+          <div id="green-player" class="player hide-player"></div>
+        </div>
+        <div class="square" id="green-3">
+          <div id="green-player" class="player hide-player"></div>
+        </div>
+        <div class="square" id="green-4">
+          <div id="green-player" class="player hide-player"></div>
+        </div>
+        <div class="square" id="green-5">
+          <div id="green-player" class="player hide-player"></div>
+        </div>
+        <div class="square" id="green-6">
+          <div id="green-player" class="player hide-player"></div>
+        </div>
+      </div>
+
+      <div id="yellow" class="player-container five">
+        <div class="square" id="yellow-1">
+          <div id="yellow-player" class="player show-player"></div>
+        </div>
+        <div class="square" id="yellow-2">
+          <div id="yellow-player" class="player hide-player"></div>
+        </div>
+        <div class="square" id="yellow-3">
+          <div id="yellow-player" class="player hide-player"></div>
+        </div>
+        <div class="square" id="yellow-4">
+          <div id="yellow-player" class="player hide-player"></div>
+        </div>
+        <div class="square" id="yellow-5">
+          <div id="yellow-player" class="player hide-player"></div>
+        </div>
+        <div class="square" id="yellow-6">
+          <div id="yellow-player" class="player hide-player"></div>
+        </div>
+      </div>
+
+      <div id="orange" class="player-container two">
+        <div class="square" id="orange-1">
+          <div id="orange-player" class="player show-player"></div>
+        </div>
+        <div class="square" id="orange-2">
+          <div id="orange-player" class="player hide-player"></div>
+        </div>
+        <div class="square" id="orange-3">
+          <div id="orange-player" class="player hide-player"></div>
+        </div>
+        <div class="square" id="orange-4">
+          <div id="orange-player" class="player hide-player"></div>
+        </div>
+        <div class="square" id="orange-5">
+          <div id="orange-player" class="player hide-player"></div>
+        </div>
+        <div class="square" id="orange-6">
+          <div id="orange-player" class="player hide-player"></div>
+        </div>
+      </div>
+
+      <div id="black" class="player-container three">
+        <div class="square" id="black-1">
+          <div id="black-player" class="player show-player"></div>
+        </div>
+        <div class="square" id="black-2">
+          <div id="black-player" class="player hide-player"></div>
+        </div>
+        <div class="square" id="black-3">
+          <div id="black-player" class="player hide-player"></div>
+        </div>
+        <div class="square" id="black-4">
+          <div id="black-player" class="player hide-player"></div>
+        </div>
+        <div class="square" id="black-5">
+          <div id="black-player" class="player hide-player"></div>
+        </div>
+        <div class="square" id="black-6">
+          <div id="black-player" class="player hide-player"></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="container">
+        <div id="dice1" class="dice dice-one">
+          <div id="dice-one-side-one" class="side one"></div>
+          <div id="dice-one-side-two" class="side two"></div>
+          <div id="dice-one-side-three" class="side three"></div>
+          <div id="dice-one-side-four" class="side four"></div>
+          <div id="dice-one-side-five" class="side five"></div>
+          <div id="dice-one-side-six" class="side six"></div>
+        </div>
+      </div>
+
+      <div id="roll" class="roll-button"><button>Roll dice!</button></div>
+    </div>
+    <div class="score-container">
+      <h2>Scoreboard</h2>
+      <table>
+        <tr>
+          <th>Player Color</th>
+          <th>Score</th>
+        </tr>
+        <tr>
+          <td>Red</td>
+          <td id="red-score">0</td>
+        </tr>
+        <tr>
+          <td>Orange</td>
+          <td id="orange-score">0</td>
+        </tr>
+        <tr>
+          <td>Black</td>
+          <td id="black-score">0</td>
+        </tr>
+        <tr>
+          <td>Blue</td>
+          <td id="blue-score">0</td>
+        </tr>
+        <tr>
+          <td>Yellow</td>
+          <td id="yellow-score">0</td>
+        </tr>
+        <tr>
+          <td>Green</td>
+          <td id="green-score">0</td>
+        </tr>
+      </table>
+      <button id="reset-score-btn">Reset Scores</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
