@@ -1,0 +1,297 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Simple SPA</title>
+  </head>
+  <body>
+    <nav>
+      <a href="#/">Language</a>
+      <a href="#/CharacterSlideEN">characterEN</a>
+      <a href="#/HomeEN">HomeEN</a>
+      <a href="#/LanguageSlide">LanguageSlide</a>
+      <a href="#/regestirationFormEN">regestirationFormEN</a>
+      <a href="#/aboutusSlideEN">aboutusSlideEN</a>
+      <a href="#/leaderboardSlideEN">leaderboardSlideEN</a>
+    </nav>
+
+    <div id="content">
+      <!-- Content will be loaded here -->
+    </div>
+
+    <script>
+      // JavaScript code for routing and content loading
+      function loadContent() {
+        const hash = window.location.hash.slice(2); // Remove '#' and '/'
+        const contentDiv = document.getElementById("content");
+
+        switch (hash) {
+          case "CharacterSlideEN":
+            contentDiv.innerHTML = `<div class="header" >
+
+    <div >
+        <h1 class="grays">Passport Patrol</h1>
+    </div>
+   <div > 
+     <img src="./images/hiveone.png" alt="">
+   </div>
+</div>
+
+<div class="character-buttons-container" data-aos="fade-up-right" >
+    <div class="character-btns" >
+        <div id="select-character">
+            Select Character
+        </div>
+        <div class="character-img-container">
+            <a id="female" onclick="selectF();showSlideById('homeSlide')">
+                <img src="./images/girl/img2.png" alt="">
+                <span>Female</span>
+            </a>
+        </div>
+        <div class="character-img-container">
+            <a id="male" onclick="selectM();showSlideById('homeSlide')">
+                <img src="./images/boy/img2.png" alt="">
+                <span>Male</span>
+            </a>
+        </div>
+    </div>
+</div>`;
+            break;
+          case "HomeEN":
+            contentDiv.innerHTML = `<div class="header" >
+            <div >
+                <h1 class="grays">Passport Patrol</h1>
+            </div>
+        <div > 
+            <img src="./images/hiveone.png" alt="">
+        </div>
+        </div>
+
+        <div class='container'>
+            <div class='row'>
+                <div class='col-6'>
+                    <div class="main-menu" >
+                        <button onclick="showSlideById('tutorialSlide')">Tutorial</button>
+                        <button onclick="showSlideById('quizSlide')">Experience</button>
+                        <button onclick="showSlideById('leaderboardSlide')">Leaderboard</button>
+                        <button onclick="showSlideById('aboutusSlide')">About</button>
+                    </div>
+                </div>
+
+                <div class='col-6'>
+                    <div class="home-img-container">
+                        <img src="./images/boy/img2.png" alt="" class="img1 charachter-img">
+                    </div>
+                    <div class="speech-bubble">Welcome</div>
+                <div>
+            </div>
+        </div>`;
+            break;
+          case "LanguageSlide":
+            contentDiv.innerHTML = `
+            <div class="header" >
+
+                <div >
+                    <h1 class="grays">Passport Patrol</h1>
+                </div>
+            <div > 
+                <img src="./images/hiveone.png" alt="">
+            </div>
+            </div>
+            <div class="language-buttons-container" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="2000">
+                <div class="lang-btns">
+                    <div id="select-lang">
+                        Select Language
+                    </div>
+                    <button class="ar"
+                    onclick="showSlideById('regestirationFormAR')"> العربية </button>
+                    <button class="en"  onclick="showSlideById('regestirationForm')">English</button>
+                    <!-- <button onclick="enableMute()" type="button">Mute sound</button>
+                    <button onclick="disableMute()" type="button">Enable sound</button> -->
+                </div>
+            </div>
+            `;
+            break;
+          case "regestirationFormEN":
+            contentDiv.innerHTML = `
+              <body class="form-v5">
+            <div class="page-content">
+                <div class="form-v5-content">
+                    <form class="form-detail" action="#" >
+                        <h2>Register Form</h2>
+                        <div class="form-row">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" name="full-name" id="full-name" class="input-text" placeholder="Your Name" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-row">
+                            <label for="your-email">Your Email</label>
+                            <input type="text" name="your-email" id="your-email" class="input-text" placeholder="Your Email" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="form-row-last">
+                            <input  name="register" class="register" value="Register" onclick="showSlideById('characterSlide')">
+                        </div>
+                    </form>
+                </div>
+            </div>`;
+            break;
+          case "aboutusSlideEN":
+            contentDiv.innerHTML = `
+           <div class="header">
+<div>
+    <h1 class="grays">Passport Patrol</h1>
+</div>
+<div>
+    <img src="./images/hiveone.png" alt="">
+</div>
+</div>
+<div class="container">
+<div class="row">
+    <div class="col-3 d-flex justify-content-center">
+        <div class="about-us-img">
+            <img src="./images/boy/img2.png" alt="" class="charachter-img">
+        </div>
+    </div>
+    <div class="col-9">
+        <div class="language-buttons-container">
+            <div class="lang-btns2 lang-btns3">
+                <div id="select-lang">
+                    ABOUT US
+                </div>
+
+                <div style="padding: 20px; font-size: 1.2rem;">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, perferendis. Quia placeat rem ea et nobis sunt eaque aliquid ab blanditiis, voluptatum inventore. Quia quis rem voluptate explicabo commodi veniam dolor magni, omnis eius iure fugiat nemo sapiente a labore facere natus esse ipsam tempore voluptatem iusto expedita et nesciunt neque. Quaerat, perferendis! Id exercitationem, magni illo debitis minima eius nemo necessitatibus quos, esse, a maiores aspernatur. Modi illum, sunt distinctio facilis nostrum architecto tempora laudantium ipsam facere. Distinctio rerum sit error nesciunt totam recusandae aspernatur cum quos quo qui fuga amet quod odit, suscipit vitae laudantium beatae placeat aliquid aperiam aliquam temporibus consequuntur nobis libero ab. Eos illo excepturi, quae nostrum fuga corrupti nulla, molestias maxime officia, optio quaerat.
+                            </p>
+                        </div>
+
+                <button class="tutorial-back-btn btn center" onclick="showSlideById('homeSlide')">Back</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div> `;
+            break;
+          case "leaderboardSlideEN":
+            contentDiv.innerHTML = `
+<div class="header" >
+
+    <div >
+        <h1 class="grays">Passport Patrol</h1>
+    </div>
+   <div > 
+     <img src="./images/hiveone.png" alt="">
+   </div>
+</div>
+    <main>
+      <div id="header">
+        <h1>Leaderboard</h1>
+       
+      </div>
+      <div id="leaderboard">
+        <div class="ribbon"></div>
+        <table>
+          <tr>
+            <td class="number">1</td>
+            <td class="name">Lee Taeyong</td>
+            <td class="points">258.244</td>
+          </tr>
+          <tr>
+            <td class="number">2</td>
+            <td class="name">Mark Lee</td>
+            <td class="points">258.242</td>
+          </tr>
+          <tr>
+            <td class="number">3</td>
+            <td class="name">Xiao Dejun</td>
+            <td class="points">258.223</td>
+          </tr>
+          <tr>
+            <td class="number">4</td>
+            <td class="name">Qian Kun</td>
+            <td class="points">258.212</td>
+          </tr>
+          <tr>
+            <td class="number">5</td>
+            <td class="name">Johnny Suh</td>
+            <td class="points">258.208</td>
+          </tr>
+          <tr>
+            <td class="number">6</td>
+            <td class="name">Johnny Suh</td>
+            <td class="points">258.208</td>
+          </tr>
+          <tr>
+            <td class="number">7</td>
+            <td class="name">Johnny Suh</td>
+            <td class="points">258.208</td>
+          </tr>
+          <tr>
+            <td class="number">8</td>
+            <td class="name">Johnny Suh</td>
+            <td class="points">258.208</td>
+          </tr>
+          <tr>
+            <td class="number">9</td>
+            <td class="name">Johnny Suh</td>
+            <td class="points">258.208</td>
+          </tr>
+          <tr>
+            <td class="number">10</td>
+            <td class="name">Johnny Suh</td>
+            <td class="points">258.208</td>
+          </tr>
+                    
+        </table>
+        
+      </div>
+      
+    </main>
+        <div id="buttons">
+          <button class="exit" onclick="showSlideById('homeSlide')">Exit</button>
+        </div>
+    
+    `;
+            break;
+          default:
+            contentDiv.innerHTML = `<div class="header" >
+
+                <div >
+                    <h1 class="grays">Passport Patrol</h1>
+                </div>
+            <div > 
+                <img src="./images/hiveone.png" alt="">
+            </div>
+            </div>
+            <div class="language-buttons-container" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="2000">
+                <div class="lang-btns">
+                    <div id="select-lang">
+                        Select Language
+                    </div>
+                    <button class="ar"
+                    onclick="showSlideById('regestirationFormAR')"> العربية </button>
+                    <button class="en"  onclick="showSlideById('regestirationForm')">English</button>
+                    <!-- <button onclick="enableMute()" type="button">Mute sound</button>
+                    <button onclick="disableMute()" type="button">Enable sound</button> -->
+                </div>
+            </div>`;
+            break;
+        }
+      }
+
+      // Initial content loading
+      window.addEventListener("DOMContentLoaded", loadContent);
+
+      // Listen for hash change events
+      window.addEventListener("hashchange", loadContent);
+    </script>
+  </body>
+</html>
