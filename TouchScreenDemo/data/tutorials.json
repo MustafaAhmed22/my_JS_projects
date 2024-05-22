@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Slide 1",
+    "content": "Content of slide 1",
+    "audio": "audio/slide1.mp3"
+  },
+  {
+    "title": "Slide 2",
+    "content": "Content of slide 2",
+    "audio": "audio/slide2.mp3"
+  },
+  {
+    "title": "Slide 3",
+    "content": "Content of slide 3",
+    "audio": "audio/slide3.mp3"
+  },
+  {
+    "title": "Slide 4",
+    "content": "Content of slide 4",
+    "audio": "audio/slide4.mp3"
+  },
+  {
+    "title": "Slide 5",
+    "content": "Content of slide 5",
+    "audio": "audio/slide5.mp3"
+  }
+]

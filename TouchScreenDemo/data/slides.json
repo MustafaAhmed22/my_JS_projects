@@ -1,0 +1,142 @@
+{
+  "slides": [
+    {
+      "id": "splash-slide",
+      "background": {
+        "type": "image",
+        "file": "",
+        "music": ""
+      },
+      "duration": 1000,
+      "target": "language-slide"
+    },
+    {
+      "id": "language-slide",
+      "background": {
+        "type": "image",
+        "file": "./images/airport1.png",
+        "music": ""
+      }
+    },
+    {
+      "id": "character-slide",
+      "background": {
+        "type": "image",
+        "file": "./images/airport1.png",
+        "music": ""
+      }
+    },
+    {
+      "id": "character-slide-AR",
+      "background": {
+        "type": "image",
+        "file": "./images/airport1.png",
+        "music": ""
+      }
+    },
+    {
+      "id": "home-slide",
+      "background": {
+        "type": "image",
+        "file": "./images/airport1.png",
+        "music": ""
+      }
+    },
+    {
+      "id": "home-slide-AR",
+      "background": {
+        "type": "image",
+        "file": "./images/airport1.png",
+        "music": ""
+      }
+    },
+    {
+      "id": "tutorial-slide",
+      "background": {
+        "type": "image",
+        "file": "./images/airport1.png",
+        "music": ""
+      }
+    },
+    {
+      "id": "tutorial-slide-AR",
+      "background": {
+        "type": "image",
+        "file": "./images/airport1.png",
+        "music": ""
+      }
+    },
+    {
+      "id": "game-slide",
+      "background": {
+        "type": "image",
+        "file": "./images/airport1.png",
+        "music": ""
+      }
+    },
+    {
+      "id": "results-slide",
+      "background": {
+        "type": "",
+        "file": "",
+        "music": ""
+      }
+    },
+    {
+      "id": "leaderboard-slide",
+      "background": {
+        "type": "image",
+        "file": "./images/airport1.png",
+        "music": ""
+      }
+    },
+    {
+      "id": "leaderboard-slide-AR",
+      "background": {
+        "type": "image",
+        "file": "./images/airport1.png",
+        "music": ""
+      }
+    },
+    {
+      "id": "aboutus-Slide",
+      "background": {
+        "type": "image",
+        "file": "./images/airport1.png",
+        "music": ""
+      }
+    },
+    {
+      "id": "aboutus-slide-AR",
+      "background": {
+        "type": "image",
+        "file": "./images/airport1.png",
+        "music": ""
+      }
+    },
+    {
+      "id": "Regestiration-Form",
+      "background": {
+        "type": "image",
+        "file": "./images/airport1.png",
+        "music": ""
+      }
+    },
+    {
+      "id": "Regestiration-Form-AR",
+      "background": {
+        "type": "image",
+        "file": "./images/airport1.png",
+        "music": ""
+      }
+    },
+    {
+      "id": "quiz-slide",
+      "background": {
+        "type": "image",
+        "file": "./images/airport1.png",
+        "music": ""
+      }
+    }
+  ]
+}

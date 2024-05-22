@@ -1,0 +1,66 @@
+﻿
+
+<header>
+    <!-- Header content -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center w-100">
+                <!-- Logo -->
+                <img src="logo.png" alt="Logo" width="50">
+                <!-- Text title -->
+                <h1 class="text-center flex-grow-1">Title</h1>
+                <!-- Buttons -->
+                <div>
+                    <button class="btn btn-primary" onclick="playAnimation('content1','slideShowToTop','slideHideToButtom')">Hide</button>
+                    <button class="btn btn-primary" onclick="playAnimation('content1','slideHideToButtom','slideShowToTop')">Show</button>
+                    <button class="btn btn-primary" onclick="showSlideById('home-slide')">Home</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content1" class="content slideHideToButtom">
+    <h1>About Us</h1>
+
+    <div>Book a Test</div>
+    <div>Please fill out the form below to book a test or appointment with [Medical Lab Name]. Our team will contact you to confirm your appointment.</div>
+
+    <div>Personal Information:</div>
+    <div>
+        Full Name: [Text Input]
+        Email Address: [Text Input]
+        Phone Number: [Text Input]
+        Date of Birth: [Date Input]
+    </div>
+
+    <div>Test Details:</div>
+    <div>
+        Test Type: [Dropdown/Selection]
+        Preferred Date: [Date Input]
+        Preferred Time: [Time Input]
+        Additional Comments: [Text Area]
+    </div>
+
+    <div>Contact Preferences:</div>
+    <div>
+        Preferred Contact Method: [Radio Buttons/Selection]
+        Email
+        Phone
+        Receive Appointment Reminders: [Checkbox]
+    </div>
+
+    <button class="btn btn-primary">Submit</button>
+
+
+    <div>
+        Please note that submitting this form does not guarantee your appointment. Our team will contact you to confirm the booking and provide further instructions.
+        Thank you for choosing [Medical Lab Name]. We look forward to serving you.
+
+    </div>
+
+</div>
+<footer>
+    <!-- Footer content -->
+    <p>&copy; 2024 Medical Lab. All rights reserved.</p>
+</footer>
+
