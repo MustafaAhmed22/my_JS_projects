@@ -11,24 +11,29 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/aos.css" rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
-    <div id="game-container" class="container">
+      <div id="game-container" class="container">
       <div id="splash-slide" class="slide"></div>
       <div id="language-slide" class="slide splash-slide"></div>
       <div id="Regestiration-Form" class="slide splash-slide"></div>
       <div id="Regestiration-Form-AR" class="slide splash-slide"></div>
       <div id="character-slide" class="slide splash-slide"></div>
       <div id="character-slide-AR" class="slide splash-slide"></div>
-      <div id="home-slide" class="slide"></div>
-      <div id="home-slide-AR" class="slide"></div>
-      <div id="tutorial-slide" class="slide"></div>
-      <div id="tutorial-slide-AR" class="slide"></div>
-<!--       <div id="game-slide" class="slide"></div>
- -->      <div id="quiz-slide" class="slide"></div>
+      <div id="home-slide" class="slide splash-slide"></div>
+      <div id="home-slide-AR" class="slide splash-slide"></div>
+      <div id="tutorial-slide" class="slide splash-slide"></div>
+      <div id="tutorial-slide-AR" class="slide splash-slide"></div>
+      <!--<div id="game-slide" class="slide"></div>-->   
+      <div id="quiz-slide" class="slide"></div>
       <div id="results-slide" class="slide"></div>
       <div id="leaderboard-slide" class="slide"></div>
       <div id="leaderboard-slide-AR" class="slide"></div>
@@ -52,7 +57,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/aos.js"></script>
-
+    <script src="js/wow.min.js"></script>
     <script src="js/slides.core.js"></script>
     <!-- <script src="js/tools.js"></script> -->
     <script src="js/script.js"></script>
@@ -61,5 +66,9 @@
     <script>
       AOS.init();
     </script>
+            <script>
+              new WOW().init();
+              </script>   
+             
   </body>
 </html>
