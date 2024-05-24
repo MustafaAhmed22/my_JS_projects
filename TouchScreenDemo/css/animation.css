@@ -1,0 +1,79 @@
+﻿@keyframes slideBottom_Animation {
+    0% {
+        opacity: 0;
+        transform: translateY(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideLeft_Animation {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight_Animation {
+    0% {
+        opacity: 0;
+        transform: translateX(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideTop_Animation {
+    0% {
+        opacity: 0;
+        transform: translateY(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.slideHideToButtom {
+    animation: slideBottom_Animation .5s ease 0s 1 reverse forwards;
+}
+
+.slideShowToTop {
+    animation: slideBottom_Animation .5s ease 0s 1 alternate forwards;
+}
+
+
+.slideHideToLeft {
+    animation: slideLeft_Animation .5s ease 0s 1 reverse forwards;
+}
+
+.slideShowToLeft {
+    animation: slideLeft_Animation .5s ease 0s 1 alternate forwards;
+}
+
+
+.slideHideToRight {
+    animation: slideRight_Animation .5s ease 0s 1 reverse forwards;
+}
+
+.slideShowToRight {
+    animation: slideRight_Animation .5s ease 0s 1 alternate forwards;
+}
+
+.hideDiv {
+    animation: myAnim .5s linear 0s 1 reverse forwards;
+}
