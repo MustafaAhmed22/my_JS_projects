@@ -295,7 +295,7 @@ body {
 }
 
 .nav-link {
-  padding: 15px;
+  padding: 12px;
   border-radius: 10px !important;
   cursor: pointer;
   background-color: #f5931e;
@@ -369,7 +369,7 @@ body {
   width: fit-content;
   text-align: start;
   margin: auto;
-  padding: 40px 10px;
+  padding: 45px 20px 10px 10px;
   border: solid 7px #73716f;
   border-radius: 50px;
   position: relative;
@@ -388,6 +388,9 @@ body {
   background-color: #f5931e;
   /* padding: 20px; */
   color: #fff;
+  padding: 12px;
+  font-size: 20px;
+  font-weight: 700;
 }
 /* Tutorial */
 
@@ -1372,7 +1375,7 @@ padding: 5rem 10rem;
 }
 
 .about-us-img {
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 .about-us-img img {
@@ -1386,6 +1389,7 @@ padding: 5rem 10rem;
 }
 
 .start_btn,
+.start_btn_AR,
 .info_box,
 .quiz_box,
 .result_box {
@@ -1426,7 +1430,7 @@ padding: 5rem 10rem;
   transform: translate(-50%, -50%) scale(1);
 }
 
-.start_btn button {
+.start_btn button,.start_btn_AR button {
   background-color: #fff;
   width: 300px;
   color: #f5931e;
@@ -1434,8 +1438,9 @@ padding: 5rem 10rem;
   font-weight: 900;
   border-radius: 30px;
   cursor: pointer;
+  margin-bottom: 20px;
 }
-.start_btn button:hover {
+.start_btn button:hover,.start_btn_AR button:hover {
   background-color: #f5931e;
   color: #fff;
 }

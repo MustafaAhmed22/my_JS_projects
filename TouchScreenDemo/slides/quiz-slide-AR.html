@@ -1,0 +1,68 @@
+﻿<!-- start Quiz button -->
+   
+    <div class='d-flex '>
+    <div class="start_btn_AR"><button class="start-game-btn">إبدأ</button></div>
+     <div class="quit_btn"><button onclick="showSlideById('home-slide-AR')">الخروج</button></div>
+    </div>
+      
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>بعض قواعد هذه المسابقة</span></div>
+        <div class="info-list">
+            <div class="info">1. سيكون لديك فقط <span>15 ثانية</span> لكل سؤال.</div>
+            <div class="info">2. بمجرد اختيار إجابتك، لا يمكن التراجع عنها.</div>
+            <div class="info">3. لا يمكنك اختيار أي خيار بمجرد انتهاء الوقت.</div>
+            <div class="info">4. لا يمكنك الخروج من الاختبار أثناء اللعب.</div>
+            <div class="info">5. ستحصل على نقاط بناءً على إجاباتك الصحيحة.</div>
+        </div>
+        <div class="buttons">
+            
+            <button class="restart">استمرار</button>
+            
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">لعبة الأختيارات</div>
+            <div class="timer">
+                <div class="time_left_txt">الوقت المتبقى</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn next_btn_AR">التالى</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">لقد أنهيت المسابقة!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart d-none">إعادة المسابقة</button>
+            <button button class = "quit"
+            onclick="showSlideById('home-slide-AR')">الخروج من المسابقة</button>
+            <button class="quit" onclick="showSlideById('leaderboard-slide-AR')">المتصدرين</button>
+        </div>
+    </div>

@@ -137,6 +137,14 @@
         "file": "./images/airport1.png",
         "music": ""
       }
+    },
+    {
+      "id": "quiz-slide-AR",
+      "background": {
+        "type": "image",
+        "file": "./images/airport1.png",
+        "music": ""
+      }
     }
   ]
 }

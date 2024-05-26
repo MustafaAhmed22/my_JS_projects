@@ -1,27 +1,31 @@
 <div class="header" >
-
-    <div data-aos="fade-right" data-aos-duration="2000">
+    <div>
         <h1 class="grays">Passport Patrol</h1>
     </div>
-   <div data-aos="fade-left" data-aos-duration="2000"> 
+   <div > 
      <img src="./images/hiveone.png" alt="">
    </div>
 </div>
 
-<div class="character-buttons-container" data-aos="fade-up-right">
-    <div class="character-btns">
-        <div id="select-character" class='rightToLeftText' >
+<div class="character-buttons-container d-flex align-items-end justify-content-center" data-aos="fade-up-right" >
+                            <button class="nav-link"
+                                onclick="showSlideById('Regestiration-Form-AR')">رجوع</button>
+    <div class="character-btns" >
+        <div id="select-character">
             اختر الشخصية
         </div>
-        <a id="female" onclick="selectF();showSlideById('home-slide-AR')">
-            <img src="./images/girl/img2.png" alt="">
-            <span>أنثى</span>
-        </a>
-        <a id="male" onclick="selectM();showSlideById('home-slide-AR')">
-            <img src="./images/boy/img2.png" alt="">
-            <span>ذكر</span>
-        </a>
+        <div class="character-img-container">
+            <a id="female" onclick="selectF();showSlideById('home-slide-AR')">
+                <img src="./images/girl/img2.png" alt="">
+                <span>انثى</span>
+            </a>
+        </div>
+        <div class="character-img-container">
+            <a id="male" onclick="selectM();showSlideById('home-slide-AR')">
+                <img src="./images/boy/img2.png" alt="">
+                <span>ذكر</span>
+            </a>
+        </div>
     </div>
 </div>
-                                        <button class="nav-link"
-                                onclick="showSlideById('Regestiration-Form-AR')">الرجوع</button>
+                                      

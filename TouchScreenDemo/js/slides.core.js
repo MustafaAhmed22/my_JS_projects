@@ -119,20 +119,6 @@ let questions = [{
             "Follow closely behind the emergency vehicle"
         ]
     },
-    // you can uncomment the below codes and make duplicate as more as you want to add question
-    // but remember you need to give the numb value serialize like 1,2,3,5,6,7,8,9.....
-
-    //   {
-    //   numb: 6,
-    //   question: "Your Question is Here",
-    //   answer: "Correct answer of the question is here",
-    //   options: [
-    //     "Option 1",
-    //     "option 2",
-    //     "option 3",
-    //     "option 4"
-    //   ]
-    // },
 ];
 let questionsAR = [{
         numb: 1,
@@ -274,30 +260,52 @@ async function loadSlideContent(slideId) {
         if(slideId === 'quiz-slide'){
             setTimeout(() => {
                 quiz()
-                 new WOW().init();
+
             }, 50);
-        } else if (slideId === 'home-slide') {
+
+        }else if (slideId === 'home-slide') {
             setTimeout(() => {
                   AOS.init();
-                   new WOW().init();
+
             }, 50);
         } else if (slideId === 'Regestiration-Form') {
             setTimeout(() => {
                 AOS.init();
-                 new WOW().init();
+
             }, 50);
         } else if (slideId === 'tutorial-slide') {
             setTimeout(() => {
                 AOS.init();
-                 new WOW().init();
+
             }, 50);
         } else if (slideId === 'aboutus-slide') {
             setTimeout(() => {
                 AOS.init();
-                new WOW().init();
+            }, 50);
+        } else if (slideId === 'home-slide-AR') {
+            setTimeout(() => {
+                AOS.init();
+            }, 50);
+        } else if (slideId === 'Regestiration-Form-AR') {
+            setTimeout(() => {
+                AOS.init();
+            }, 50);
+        } else if (slideId === 'tutorial-slide-AR') {
+            setTimeout(() => {
+                AOS.init();
+            }, 50);
+        } else if (slideId === 'aboutus-slide-AR') {
+            setTimeout(() => {
+                AOS.init();
+            }, 50);
+        } else if (slideId === 'quiz-slide-AR') {
+            setTimeout(() => {
+                quizAR()
+                AOS.init();
+                
+
             }, 50);
         }
-
         const responseText = await response.text();
         document.getElementById(slideId).innerHTML = responseText;
     } catch (error) {
@@ -426,44 +434,6 @@ function adjustContentHeight() {
     content.style.height = `${contentHeight}px`;
 }
 
-// Call the function on page load and window resize
-//window.addEventListener('load', adjustContentHeight);
-//window.addEventListener('resize', adjustContentHeight);
-
-//// Function to adjust content height dynamically
-//function adjustContentHeight() {
-//    let headerHeight = 0;
-//    let footerHeight = 0;
-
-//    const header = document.querySelector('header');
-//    if (header) {
-//        headerHeight = header.offsetHeight;
-//    }
-
-//    const footer = document.querySelector('footer');
-//    if (footer) {
-//        footerHeight = footer.offsetHeight;
-//    }
-
-//    const windowHeight = window.innerHeight;
-//    let contentHeight = windowHeight;
-
-//    if (header) {
-//        contentHeight -= headerHeight;
-//    }
-//    if (footer) {
-//        contentHeight -= footerHeight;
-//    }
-
-//    const content = document.querySelector('.content');
-//    if (content) {
-//        content.style.height = `${contentHeight}px`;
-//    }
-//}
-
-//// Call the function on page load and window resize
-//window.addEventListener('load', adjustContentHeight);
-//window.addEventListener('resize', adjustContentHeight);
 
 
 /* new  */
@@ -721,8 +691,6 @@ function optionSelected(answer) {
 
 /* /////////////////////////////////////////////////////// */
 
-
-/* quiz slide AR*/
 
 
 
