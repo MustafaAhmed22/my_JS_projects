@@ -271,7 +271,7 @@ function quizAR() {
             }
             if (time < 0) { //if timer is less than 0
                 clearInterval(counterAR); //clear counter
-                timeText.textContent = "Time Off"; //change the time text to time off
+                timeText.textContent = "الوقت المتبقى"; //change the time text to time off
                 const allOptions = option_listAR.children.length; //getting all option items
                 let correcAns = questionsAR[que_countAR].answer; //getting correct answer from array
                 for (i = 0; i < allOptions; i++) {
