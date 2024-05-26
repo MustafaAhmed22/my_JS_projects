@@ -573,7 +573,5 @@ function optionSelected(answer) {
 /* quiz slide */
 /* /////////////////////////////////////////////////////// */
 
-/* form data */
 
 
-/* form data */

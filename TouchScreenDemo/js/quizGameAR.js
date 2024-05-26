@@ -123,6 +123,7 @@ let questionsAR = [{
 /* quiz slide AR*/
 
 function quizAR() {
+    
     //selecting all required elements
     const start_btn_AR = document.querySelector(".start_btn_AR button");
     const info_box = document.querySelector(".info_box");
@@ -232,7 +233,7 @@ function quizAR() {
 
         // set onclick attribute to all available options
         for (i = 0; i < option.length; i++) {
-            option[i].setAttribute("onclick", "optionSelected(this)");
+            option[i].setAttribute("onclick", "optionSelectedAR(this)");
         }
     }
     // creating the new div tags which for icons
@@ -251,7 +252,7 @@ function quizAR() {
             let scoreTag = '<span>مبرووك! 🎉, حصلت على <p>' + userScoreAR + '</p> من <p>' + questionsAR.length + '</p></span>';
             scoreText.innerHTML = scoreTag; //adding new span tag inside score_Text
         } else if (userScoreAR > 1) { // if user scored more than 1
-            let scoreTag = '<span>جيد 😎, حصلت على <p>' + userScoreAR + '</p> من <p>' + questionsAR.length + '</p></span>';
+            let scoreTag = '<span>حصلت على 😎<p>' + userScoreAR + '</p> من <p>' + questionsAR.length + '</p></span>';
             scoreText.innerHTML = scoreTag;
         } else { // if user scored less than 1
             let scoreTag = '<span>نأسف لك 😐, حصلت على <p>' + userScoreAR + '</p> من <p>' + questionsAR.length + '</p></span>';
@@ -272,16 +273,18 @@ function quizAR() {
             if (time < 0) { //if timer is less than 0
                 clearInterval(counterAR); //clear counter
                 timeText.textContent = "الوقت المتبقى"; //change the time text to time off
-                const allOptions = option_listAR.children.length; //getting all option items
+                
+                const allOptionsAR = option_listAR.children.length; //getting all option items
+                
                 let correcAns = questionsAR[que_countAR].answer; //getting correct answer from array
-                for (i = 0; i < allOptions; i++) {
+                for (i = 0; i < allOptionsAR; i++) {
                     if (option_listAR.children[i].textContent == correcAns) { //if there is an option which is matched to an array answer
                         option_listAR.children[i].setAttribute("class", "option correct"); //adding green color to matched option
                         // option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag); //adding tick icon to matched option
                         console.log("Time Off: Auto selected correct answer.");
                     }
                 }
-                for (i = 0; i < allOptions; i++) {
+                for (i = 0; i < allOptionsAR; i++) {
                     option_listAR.children[i].classList.add("disabled"); //once user select an option then disabled all options
                 }
                 next_btn_AR.classList.add("show"); //show the next button if user selected any option
@@ -308,12 +311,12 @@ function quizAR() {
     }
 }
 
-function optionSelected(answer) {
+function optionSelectedAR(answer) {
     // clearInterval(counter); //clear counter
     // clearInterval(counterLine); //clear counterLine
     let userAns = answer.textContent; //getting user selected option
     let correcAns = questionsAR[que_countAR].answer; //getting correct answer from array
-    const allOptions = option_listAR.children.length; //getting all option items
+    const allOptionsAR = option_listAR.children.length; //getting all option items
 
     if (userAns == correcAns) { //if user selected option is equal to array's correct answer
         userScoreAR += 1; //upgrading score value with 1
@@ -326,7 +329,7 @@ function optionSelected(answer) {
         // answer.insertAdjacentHTML("beforeend", crossIconTag); //adding cross icon to correct selected option
         console.log("Wrong Answer");
 
-        for (i = 0; i < allOptions; i++) {
+        for (i = 0; i < allOptionsAR; i++) {
             if (option_listAR.children[i].textContent == correcAns) { //if there is an option which is matched to an array answer 
                 option_listAR.children[i].setAttribute("class", "option correct"); //adding green color to matched option
                 // option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag); //adding tick icon to matched option
@@ -334,7 +337,7 @@ function optionSelected(answer) {
             }
         }
     }
-    for (i = 0; i < allOptions; i++) {
+    for (i = 0; i < allOptionsAR; i++) {
         option_listAR.children[i].classList.add("disabled"); //once user select an option then disabled all options
     }
     next_btn_AR.classList.add("show"); //show the next button if user selected any option
