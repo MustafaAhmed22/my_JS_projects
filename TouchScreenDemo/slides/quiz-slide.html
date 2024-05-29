@@ -64,6 +64,9 @@
             <button button class = "quit"
             onclick="showSlideById('home-slide')"
             ">Quit Quiz</button>
-            <button class="quit" onclick="showSlideById('leaderboard-slide')">LeaderBoard</button>
+            <button class="quit" onclick="showSlideById('leaderboard-slide');
+            setTimeout(() => {
+                addContact();
+            }, 500); ">LeaderBoard</button>
         </div>
     </div>

@@ -575,3 +575,70 @@ function optionSelected(answer) {
 
 
 
+/* registeration */
+
+function addContact() {
+    // Get the input value
+    const firstName = document.getElementById('full-name').value;
+    console.log(firstName)
+    // Check if the first name field is filled
+    if (firstName === '') {
+        alert('Please enter a first name.');
+        return;
+    }
+
+    // Generate a random number between 1 and 1000
+    const randomNumber = Math.floor(Math.random() * 1000) + 1;
+
+    // Get the contact list
+    const contactList = document.getElementById('contactList');
+
+    // Create a new contact object
+    const newContact = {
+        firstName: firstName,
+        randomNumber: randomNumber
+    };
+
+    // Get all existing contacts
+    const contacts = Array.from(contactList.getElementsByTagName('tr')).map(tr => {
+        const td = tr.getElementsByTagName('td');
+        console.log(td)
+        return {
+            firstName: td[0].textContent,
+            randomNumber: parseInt(td[1].textContent, 10)
+        };
+    });
+
+    // Add the new contact
+    contacts.push(newContact);
+
+    // Sort the contacts in descending order based on the random number
+    contacts.sort((a, b) => b.randomNumber - a.randomNumber);
+
+    // Keep only the top 10 contacts
+    const topContacts = contacts.slice(0, 10);
+
+    // Clear the contact list
+    contactList.innerHTML = '';
+
+    // Rebuild the contact list with sorted contacts
+    topContacts.forEach(contact => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td class="name">${contact.firstName}</td><td class="points">${contact.randomNumber}</td>`;
+        contactList.appendChild(tr);
+    });
+
+    // Clear the input field
+    document.getElementById('full-name').value = '';
+    document.getElementById('your-email').value = '';
+
+
+
+
+
+}
+
+
+
+
+/* registeration */
