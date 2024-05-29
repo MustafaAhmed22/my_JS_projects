@@ -400,19 +400,19 @@ function quiz() {
 
     // if restartQuiz button clicked
     restart_quiz.onclick = () => {
-        quiz_box.classList.add("activeQuiz"); //show quiz box
+        //quiz_box.classList.add("activeQuiz"); //show quiz box
         result_box.classList.remove("activeResult"); //hide result box
         timeValue = 15;
         que_count = 0;
         que_numb = 1;
         userScore = 0;
         widthValue = 0;
-        showQuetions(que_count); //calling showQestions function
+        //showQuetions(que_count); //calling showQestions function
         queCounter(que_numb); //passing que_numb value to queCounter
         clearInterval(counter); //clear counter
         clearInterval(counterLine); //clear counterLine
-        startTimer(timeValue); //calling startTimer function
-        startTimerLine(widthValue); //calling startTimerLine function
+        //startTimer(timeValue); //calling startTimer function
+       // startTimerLine(widthValue); //calling startTimerLine function
         timeText.textContent = "Time Left"; //change the text of timeText to Time Left
         next_btn.classList.remove("show"); //hide the next button
     }
@@ -588,7 +588,7 @@ function addContact() {
     }
 
     // Generate a random number between 1 and 1000
-    const randomNumber = Math.floor(Math.random() * 1000) + 1;
+   // const randomNumber = Math.floor(Math.random() * 1000) + 1;
 
     // Get the contact list
     const contactList = document.getElementById('contactList');
@@ -596,7 +596,7 @@ function addContact() {
     // Create a new contact object
     const newContact = {
         firstName: firstName,
-        randomNumber: randomNumber
+        userScore: userScore
     };
 
     // Get all existing contacts
@@ -605,7 +605,7 @@ function addContact() {
         console.log(td)
         return {
             firstName: td[0].textContent,
-            randomNumber: parseInt(td[1].textContent, 10)
+            userScore: parseInt(td[1].textContent, 10)
         };
     });
 
@@ -613,7 +613,7 @@ function addContact() {
     contacts.push(newContact);
 
     // Sort the contacts in descending order based on the random number
-    contacts.sort((a, b) => b.randomNumber - a.randomNumber);
+    contacts.sort((a, b) => b.userScore - a.userScore);
 
     // Keep only the top 10 contacts
     const topContacts = contacts.slice(0, 10);
@@ -624,17 +624,27 @@ function addContact() {
     // Rebuild the contact list with sorted contacts
     topContacts.forEach(contact => {
         const tr = document.createElement('tr');
-        tr.innerHTML = `<td class="name">${contact.firstName}</td><td class="points">${contact.randomNumber}</td>`;
+        tr.innerHTML = `<td class="name">${contact.firstName}</td><td class="points">${contact.userScore}</td>`;
         contactList.appendChild(tr);
     });
 
     // Clear the input field
     document.getElementById('full-name').value = '';
-    document.getElementById('your-email').value = '';
 
-
-
-
+        result_box.classList.remove("activeResult"); //hide result box
+        timeValue = 15;
+        que_count = 0;
+        que_numb = 1;
+        userScore = 0;
+        widthValue = 0;
+        //showQuetions(que_count); //calling showQestions function
+        queCounter(que_numb); //passing que_numb value to queCounter
+        clearInterval(counter); //clear counter
+        clearInterval(counterLine); //clear counterLine
+        //startTimer(timeValue); //calling startTimer function
+        // startTimerLine(widthValue); //calling startTimerLine function
+        timeText.textContent = "Time Left"; //change the text of timeText to Time Left
+        next_btn.classList.remove("show"); //hide the next button
 
 }
 

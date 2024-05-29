@@ -938,8 +938,8 @@ tr:not(:first-child):hover {
 }
 
 tr:nth-child(odd) {
-  background-color: #f9f9f9;
-}
+/*   background-color: #f9f9f9;
+ */}
 
 tr:nth-child(1) {
   color: #fff;
@@ -961,7 +961,7 @@ td {
 }
 
 .name {
-  text-align: left;
+  text-align: center;
   font-size: 1.2rem;
 }
 
@@ -969,7 +969,7 @@ td {
   font-weight: bold;
   font-size: 1.3rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
@@ -1763,19 +1763,19 @@ footer button.show {
   transition: all 0.3s ease;
 }
 
-.buttons button.restart {
+/* .buttons button.restart {
   background-color: #fff;
-  /*     width: 300px; */
+ 
   color: #f5931e;
-  /*  padding: 10px; */
+ 
   font-weight: 900;
   border-radius: 30px;
 }
-
-.buttons button.restart:hover {
+ */
+/* .buttons button.restart:hover {
   background: #f5931e;
 }
-
+ */
 .buttons button.quit {
   color: #f5931e;
   background: #fff;
