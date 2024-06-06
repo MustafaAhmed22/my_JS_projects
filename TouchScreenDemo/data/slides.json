@@ -14,56 +14,56 @@
       "id": "language-slide",
       "background": {
         "type": "image",
-        "file": "./images/airport1.png",
-        "music": ""
+        "file": "./images/traffic2.png",
+        "music": "./sounds/Cinema Sins Background Song Clowning Around Background Music HD.mp3"
       }
     },
     {
       "id": "character-slide",
       "background": {
         "type": "image",
-        "file": "./images/airport1.png",
-        "music": ""
+        "file": "./images/traffic5.png",
+        "music": "./sounds/Envici November  Original Instrument.mp3"
       }
     },
     {
       "id": "character-slide-AR",
       "background": {
         "type": "image",
-        "file": "./images/airport1.png",
-        "music": ""
+        "file": "./images/traffic5.png",
+        "music": "./sounds/Fluffing a Duck Vanoss Gaming Background Music HD.mp3"
       }
     },
     {
       "id": "home-slide",
       "background": {
         "type": "image",
-        "file": "./images/airport1.png",
-        "music": ""
+        "file": "./images/traffic8.jpg",
+        "music": "./sounds/Sneaky Snitch Kevin MacLeod Gaming Background Music HD.mp3"
       }
     },
     {
       "id": "home-slide-AR",
       "background": {
         "type": "image",
-        "file": "./images/airport1.png",
-        "music": ""
+        "file": "./images/traffic8.jpg",
+        "music": "./sounds/This is Not Funk True Cuckoo  Free No Copyright Music.mp3"
       }
     },
     {
       "id": "tutorial-slide",
       "background": {
         "type": "image",
-        "file": "./images/airport1.png",
-        "music": ""
+        "file": "./images/traffic6.jpg",
+        "music": "./sounds/This is Not Funk True Cuckoo  Free No Copyright Music.mp3"
       }
     },
     {
       "id": "tutorial-slide-AR",
       "background": {
         "type": "image",
-        "file": "./images/airport1.png",
-        "music": ""
+        "file": "./images/traffic6.jpg",
+        "music": "./sounds/Fluffing a Duck Vanoss Gaming Background Music HD.mp3"
       }
     },
     {
@@ -71,7 +71,7 @@
       "background": {
         "type": "image",
         "file": "./images/airport1.png",
-        "music": ""
+        "music": "./sounds/Envici November  Original Instrument.mp3"
       }
     },
     {
@@ -79,71 +79,71 @@
       "background": {
         "type": "",
         "file": "",
-        "music": ""
+        "music": "./sounds/Cinema Sins Background Song Clowning Around Background Music HD.mp3"
       }
     },
     {
       "id": "leaderboard-slide",
       "background": {
         "type": "image",
-        "file": "./images/airport1.png",
-        "music": ""
+        "file": "./images/traffic10.jpg",
+        "music": "./sounds/Fluffing a Duck Vanoss Gaming Background Music HD.mp3"
       }
     },
     {
       "id": "leaderboard-slide-AR",
       "background": {
         "type": "image",
-        "file": "./images/airport1.png",
-        "music": ""
+        "file": "./images/traffic10.jpg",
+        "music": "./sounds/Envici November  Original Instrument.mp3"
       }
     },
     {
       "id": "aboutus-Slide",
       "background": {
         "type": "image",
-        "file": "./images/airport1.png",
-        "music": ""
+        "file": "./images/traffic9.jpg",
+        "music": "./sounds/Sneaky Snitch Kevin MacLeod Gaming Background Music HD.mp3"
       }
     },
     {
       "id": "aboutus-slide-AR",
       "background": {
         "type": "image",
-        "file": "./images/airport1.png",
-        "music": ""
+        "file": "./images/traffic9.jpg",
+        "music": "./sounds/Cinema Sins Background Song Clowning Around Background Music HD.mp3"
       }
     },
     {
       "id": "Regestiration-Form",
       "background": {
         "type": "image",
-        "file": "./images/airport1.png",
-        "music": ""
+        "file": "./images/traffic4.png",
+        "music": "./sounds/Fluffing a Duck Vanoss Gaming Background Music HD.mp3"
       }
     },
     {
       "id": "Regestiration-Form-AR",
       "background": {
         "type": "image",
-        "file": "./images/airport1.png",
-        "music": ""
+        "file": "./images/traffic4.png",
+        "music": "./sounds/Envici November  Original Instrument.mp3"
       }
     },
     {
       "id": "quiz-slide",
       "background": {
         "type": "image",
-        "file": "./images/airport1.png",
-        "music": ""
+        "file": "./images/traffic12.jpg",
+        "music": "./sounds/Envici November  Original Instrument.mp3"
       }
     },
     {
       "id": "quiz-slide-AR",
       "background": {
         "type": "image",
-        "file": "./images/airport1.png",
-        "music": ""
+        "file": "./images/traffic12.jpg",
+        "music": "./sounds/Fluffing a Duck Vanoss Gaming Background Music HD.mp3"
       }
     }
   ]

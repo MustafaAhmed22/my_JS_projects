@@ -36,7 +36,6 @@ function selectF() {
 }
 
 
-
 /* mute sound */
 
 var x = document.querySelector('#bg-music');
@@ -53,17 +52,4 @@ function disableMute() {
     }
 }
 
-
 /* mute sound */
-
-/* dropdown */
-
-
-
-
-
-
-
-
-
-/* dropdown */

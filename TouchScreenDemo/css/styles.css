@@ -86,6 +86,89 @@ body {
   z-index: -1;
 }
 
+#home-slide{
+  background: linear-gradient( rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.781) ), url('../images/traffic8.jpg');
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+#home-slide-AR{
+  background: linear-gradient( rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.781) ), url('../images/traffic8.jpg');
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+#character-slide{
+  background: linear-gradient( rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.781) ), url('../images/traffic7.gif');
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+#character-slide-AR{
+  background: linear-gradient( rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.781) ), url('../images/traffic7.gif');
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+#language-slide{
+  background: linear-gradient( rgba(0, 0, 0, 0.288), rgba(0, 0, 0, 0.425) ), url('../images/traffic2.png');
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+#aboutus-Slide{
+  background: linear-gradient( rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.753) ), url('../images/traffic9.jpg');
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+#Regestiration-Form{
+  background: linear-gradient( rgba(0, 0, 0, 0.486), rgba(0, 0, 0, 0.534) ), url('../images/traffic11.jpg');
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+#Regestiration-Form-AR{
+  background: linear-gradient( rgba(0, 0, 0, 0.459), rgba(0, 0, 0, 0.493) ), url('../images/traffic11.jpg');
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+#tutorial-slide{
+  background: linear-gradient( rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.555) ), url('../images/traffic6.jpg');
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+#tutorial-slide-AR{
+  background: linear-gradient( rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.555) ), url('../images/traffic6.jpg');
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+#leaderboard-slide{
+  background: linear-gradient( rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.555) ), url('../images/traffic10.jpg');
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+#leaderboard-slide-AR{
+  background: linear-gradient( rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.555) ), url('../images/traffic10.jpg');
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+#quiz-slide{
+  background: linear-gradient( rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.555) ), url('../images/traffic10.jpg');
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+#quiz-slide-AR{
+  background: linear-gradient( rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.555) ), url('../images/traffic10.jpg');
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
 /* language screen */
 
 .grays {
@@ -1375,11 +1458,11 @@ padding: 5rem 10rem;
 }
 
 .about-us-img {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .about-us-img img {
-  width: 500px;
+  /* width: 500px; */
 }
 
 /* quiz slide */
