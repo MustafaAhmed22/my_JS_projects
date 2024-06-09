@@ -123,7 +123,7 @@ let questionsAR = [{
 /* quiz slide AR*/
 
 function quizAR() {
-    
+
     //selecting all required elements
     const start_btn_AR = document.querySelector(".start_btn_AR button");
     const info_box = document.querySelector(".info_box");
@@ -273,9 +273,9 @@ function quizAR() {
             if (time < 0) { //if timer is less than 0
                 clearInterval(counterAR); //clear counter
                 timeText.textContent = "الوقت المتبقى"; //change the time text to time off
-                
+
                 const allOptionsAR = option_listAR.children.length; //getting all option items
-                
+
                 let correcAns = questionsAR[que_countAR].answer; //getting correct answer from array
                 for (i = 0; i < allOptionsAR; i++) {
                     if (option_listAR.children[i].textContent == correcAns) { //if there is an option which is matched to an array answer

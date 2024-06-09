@@ -1,4 +1,5 @@
 let boy = 'boy'
+
 function selectM() {
     //     let selectMale = document.getElementById('male')
     //     console.log('../images/`${boy}`/img1.png')
@@ -41,13 +42,13 @@ function selectF() {
 var x = document.querySelector('#bg-music');
 
 function enableMute() {
-    if(x.muted === false){
+    if (x.muted === false) {
         x.muted = true;
     }
 }
 
 function disableMute() {
-    if(x.muted === true){
+    if (x.muted === true) {
         x.muted = false;
     }
 }
