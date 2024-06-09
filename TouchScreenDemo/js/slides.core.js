@@ -577,7 +577,7 @@ function optionSelected(answer) {
 
 /* registeration */
 
-function addContact() {
+/* function addContact() {
     // Get the input value
     const firstName = document.getElementById('full-name').value;
     console.log(firstName)
@@ -646,9 +646,10 @@ function addContact() {
     timeText.textContent = "Time Left"; //change the text of timeText to Time Left
     next_btn.classList.remove("show"); //hide the next button
 
-}
+} */
 
 
 
-
+let getFullNameData = document.querySelector('#full-name');
+    console.log(getFullNameData.value)
 /* registeration */
