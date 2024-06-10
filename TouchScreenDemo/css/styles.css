@@ -131,6 +131,12 @@ body {
   background-size: cover !important;
   background-repeat: no-repeat !important;
 }
+#aboutus-slide-AR {
+  background: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.603)), url('../images/traffic16.png');
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
 
 #Regestiration-Form {
   background: linear-gradient(rgba(0, 0, 0, 0.486), rgba(0, 0, 0, 0.534)), url('../images/traffic11.jpg');

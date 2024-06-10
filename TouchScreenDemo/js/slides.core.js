@@ -9,6 +9,9 @@ let counterLine;
 let option_list;
 let next_btn;
 let widthValue = 0;
+let data = {}
+let FULLDATA = [localStorage.getItem('full')]
+console.log(FULLDATA)
 let questions = [{
         numb: 1,
         question: "What does a red traffic light indicate?",
@@ -472,6 +475,14 @@ function quiz() {
     //if user clicked on option
     // optionSelected(answer);
     function showResult() {
+        registerButton(name,userScore)
+        data.score =userScore
+        console.log(userScore)
+        FULLDATA.push(data)
+       // FULLDATA.push(JSON.parse(localStorage.getItem("userData")))
+        localStorage.setItem("full", JSON.stringify(FULLDATA));
+
+
         info_box.classList.remove("activeInfo"); //hide info box
         quiz_box.classList.remove("activeQuiz"); //hide quiz box
         result_box.classList.add("activeResult"); //show result box
@@ -650,6 +661,21 @@ function optionSelected(answer) {
 
 
 
-let getFullNameData = document.querySelector('#full-name');
-    console.log(getFullNameData.value)
+/* let getFullNameData = document.querySelector('#full-name'); */
+function registerButton(name,score){
+    setTimeout(() => {
+        name = document.querySelector('#full-name').value
+         data.fullname =name ;
+         data.score = score;
+           // console.log(data)
+            localStorage.setItem('userData', JSON.stringify(data));
+           /*  let a = localStorage.getItem('userData')
+            console.log(JSON.parse(a)) */
+
+    }, 50);
+}
+console.log(data)
+  //  FULLDATA.push(JSON.parse(localStorage.getItem("data")))
+
+
 /* registeration */
