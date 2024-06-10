@@ -10,7 +10,7 @@ let option_list;
 let next_btn;
 let widthValue = 0;
 let data = {}
-let FULLDATA = [localStorage.getItem('full')]
+let FULLDATA = localStorage.getItem('full')
 console.log(FULLDATA)
 let questions = [{
         numb: 1,
@@ -477,11 +477,12 @@ function quiz() {
     function showResult() {
         registerButton(name,userScore)
         data.score =userScore
-        console.log(userScore)
-        FULLDATA.push(data)
+        
+        FULLDATA.push(JSON.stringify(data))
        // FULLDATA.push(JSON.parse(localStorage.getItem("userData")))
-        localStorage.setItem("full", JSON.stringify(FULLDATA));
-
+        localStorage.setItem("full", FULLDATA);
+        let x = localStorage.getItem('full')
+        console.log(x)
 
         info_box.classList.remove("activeInfo"); //hide info box
         quiz_box.classList.remove("activeQuiz"); //hide quiz box
