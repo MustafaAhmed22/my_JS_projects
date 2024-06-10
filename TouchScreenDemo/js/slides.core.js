@@ -10,8 +10,6 @@ let option_list;
 let next_btn;
 let widthValue = 0;
 let data = {}
-let FULLDATA = localStorage.getItem('full')
-console.log(FULLDATA)
 let questions = [{
         numb: 1,
         question: "What does a red traffic light indicate?",
@@ -478,11 +476,8 @@ function quiz() {
         registerButton(name,userScore)
         data.score =userScore
         
-        FULLDATA.push(JSON.stringify(data))
-       // FULLDATA.push(JSON.parse(localStorage.getItem("userData")))
-        localStorage.setItem("full", FULLDATA);
-        let x = localStorage.getItem('full')
-        console.log(x)
+        
+
 
         info_box.classList.remove("activeInfo"); //hide info box
         quiz_box.classList.remove("activeQuiz"); //hide quiz box
