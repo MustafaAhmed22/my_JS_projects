@@ -212,7 +212,8 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 15px;
+  margin-top: 18px;
+  margin-left: 18px;
   z-index: 99999;
 }
 
