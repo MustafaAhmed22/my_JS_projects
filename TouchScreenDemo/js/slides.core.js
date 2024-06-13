@@ -477,7 +477,12 @@ function quiz() {
         registerButton(name,userScore)
         data.score =userScore
         highScores.push(data)
+       /*  localStorage.setItem('userData', JSON.stringify(highScores)); */
+        console.log(highScores)
+
         localStorage.setItem('userData', JSON.stringify(highScores));
+
+
 
         info_box.classList.remove("activeInfo"); //hide info box
         quiz_box.classList.remove("activeQuiz"); //hide quiz box
@@ -662,12 +667,12 @@ function registerButton(name,score){
     setTimeout(() => {
         name = document.querySelector('#full-name').value
          data.fullname =name ;
-         data.score = score;
+       
            // console.log(data)
         //localStorage.setItem('userData', JSON.stringify(data));
            /*  let a = localStorage.getItem('userData')
             console.log(JSON.parse(a)) */
-        JSON.parse(localStorage.getItem(highScores))
+        /* JSON.parse(localStorage.getItem(highScores)) */
     }, 50);
 }
 console.log(data)
@@ -675,3 +680,5 @@ console.log(data)
 
 
 /* registeration */
+
+
